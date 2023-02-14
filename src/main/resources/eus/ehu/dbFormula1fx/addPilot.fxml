@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.dbFormula1fx.AddPilotController">
+   <children>
+      <Label layoutX="154.0" layoutY="103.0" text="Name" />
+      <ComboBox fx:id="country" layoutX="222.0" layoutY="147.0" prefHeight="26.0" prefWidth="160.0" />
+      <TextField fx:id="name" layoutX="220.0" layoutY="99.0" />
+      <Label layoutX="154.0" layoutY="151.0" text="Country" />
+      <Label layoutX="161.0" layoutY="209.0" text="Points" />
+      <TextField fx:id="points" layoutX="220.0" layoutY="205.0" prefHeight="26.0" prefWidth="160.0" />
+      <Button layoutX="257.0" layoutY="257.0" mnemonicParsing="false" onAction="#addAction" text="Add" />
+   </children>
+</AnchorPane>
