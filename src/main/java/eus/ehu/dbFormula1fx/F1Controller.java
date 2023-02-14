@@ -9,7 +9,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 
-
 public class F1Controller {
 
     @FXML
@@ -26,7 +25,6 @@ public class F1Controller {
     @FXML
     void onChange() {
         String selection = combNationality.getSelectionModel().getSelectedItem();
-
         if (selection.equals("All")) {
             pilots.setAll(bl.getAllPilots());
         } else {
@@ -36,11 +34,7 @@ public class F1Controller {
 
     @FXML
     void initialize() {
-
         combNationality.setItems(nationalities);
-
         listPilot.setItems(pilots);
-
-
     }
 }
