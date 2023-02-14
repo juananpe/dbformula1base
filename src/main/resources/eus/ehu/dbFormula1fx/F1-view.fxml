@@ -5,11 +5,11 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.dbFormula1fx.F1Controller">
-<children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.dbFormula1fx.F1Controller">
     <ComboBox fx:id="combNationality" layoutX="218.0" layoutY="83.0" onAction="#onChange" prefWidth="150.0" />
     <Label layoutX="86.0" layoutY="88.0" text="Search by nationality:" />
     <ListView fx:id="listPilot" layoutX="86.0" layoutY="168.0" prefHeight="160.0" prefWidth="284.0" />
     <Label layoutX="86.0" layoutY="145.0" prefHeight="17.0" prefWidth="39.0" text="Pilots:" />
-</children>
 </AnchorPane>
