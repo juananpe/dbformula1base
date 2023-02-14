@@ -9,7 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 
-public class F1Controller {
+public class F1Controller implements FxController {
 
     @FXML
     private ComboBox<String> combNationality;
@@ -21,6 +21,7 @@ public class F1Controller {
 
     final private ObservableList<String> nationalities = FXCollections.observableArrayList("All", "United Kingdom", "Japan", "Spain", "Monaco", "Mexico");
     final private ObservableList<Pilot> pilots = FXCollections.observableArrayList();
+    private F1Application main;
 
     @FXML
     void onChange() {
@@ -36,5 +37,10 @@ public class F1Controller {
     void initialize() {
         combNationality.setItems(nationalities);
         listPilot.setItems(pilots);
+    }
+
+    @Override
+    public void setMain(F1Application main) {
+        this.main = main;
     }
 }

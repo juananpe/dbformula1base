@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
-public class AddPilotController {
+public class AddPilotController implements FxController {
 
     @FXML
     private ComboBox<String> country;
@@ -15,6 +15,7 @@ public class AddPilotController {
 
     @FXML
     private TextField points;
+    private F1Application main;
 
     @FXML
     void addAction(ActionEvent event) {
@@ -26,4 +27,8 @@ public class AddPilotController {
 
     }
 
+    @Override
+    public void setMain(F1Application main) {
+        this.main = main;
+    }
 }
